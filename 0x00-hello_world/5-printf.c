@@ -3,7 +3,9 @@
 /**
  * main - Entry point
  *
- * return - Always 0 (success)
+ * Description - This program is to print a string of words
+ *
+ * Return:  Always 0 (success)
  */
 
 int main(void)
