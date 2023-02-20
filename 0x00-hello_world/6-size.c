@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Description: print size of data type
+ * Description: This program is to print the size of data type
  *
- * return - Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
