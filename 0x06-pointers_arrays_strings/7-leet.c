@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * leet -encodes atring into 1337
  * @n: input
