@@ -1,0 +1,31 @@
+#include <stdio.h>
+/**
+ * main - entry point, print all combinations of three digit
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	int i;
+	int j;
+	int k;
+
+	for (i = 0 ; i < 8 ; i++)
+	{
+		for (j = 1 ; j < 9 ; j++)
+
+			for (k = 2 ; k < 10 ; k++)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (i + j + k != 24)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+	}
+	putchar('\n');
+	return (0);
+}
