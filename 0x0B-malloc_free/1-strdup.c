@@ -29,7 +29,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	/* copy the str to the bew memory */
+	/* copy the str to the new memory */
 
 	for (count = 0; str[count] != '\0'; count++)
 	{
