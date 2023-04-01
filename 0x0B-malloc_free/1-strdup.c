@@ -8,11 +8,14 @@
 char *_strdup(char *str)
 {
 	char *ptstring;
+	int count;
 
 	/*get lenght of str*/
-	
-	int str_len = 0; 
-	while (str[str_len] != '\0'){
+
+	int str_len = 0;
+
+	while (str[str_len] != '\0')
+	{
 		str_len++;
 	}
 
@@ -27,14 +30,14 @@ char *_strdup(char *str)
 	}
 
 	/* copy the str to the bew memory */
-	int count;
-	for (count = 0 str[count] != '\0'; count++)
+
+	for (count = 0; str[count] != '\0'; count++)
 	{
 		ptstring[count] = str[count];
 	}
 	ptstring[count] = '\0';
 
-	return (ptsring);
+	return (ptstring);
 
 }
 
