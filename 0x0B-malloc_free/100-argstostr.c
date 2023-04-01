@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * argstostr - concatenates all the arguments of the  program.
@@ -11,7 +12,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *ptstring;
-	int count; /* count will be the total total number of strings in all */
+	int count; /* count will be the total number of strings in all */
 	int i; /* i is to count the number of rows*/
 	int j; /* j is to count the number of columns of the string*/
 	int k;
@@ -25,9 +26,10 @@ char *argstostr(int ac, char **av)
 		count++;
 
 	}
-	}count++;
+	} count++;
 	/* allocate enough space for all the string */
-	ptstring = malloc(count * sizeof(char));
+	  
+	ptstring = malloc(count * sizeof(char) + 1);
 	if (ptstring == NULL)
 		return (NULL);
 
