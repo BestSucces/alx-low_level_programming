@@ -19,10 +19,13 @@ char *argstostr(int ac, char **av)
 
 	/* get the length of each string */
 	for (i = 0, count = 0; i < ac; i++)
-
+	{
 	/* each row becomes av[i] */
 	for (j = 0; av[i][j] != '\0'; j++, count++)
-
+	{
+		count++;
+	}
+	}
 	/* allocate enough space for all the string */
 
 	ptstring = malloc(count * sizeof(char));
@@ -38,8 +41,8 @@ char *argstostr(int ac, char **av)
 			k++;
 		}
 		/* add new line charater before pointing to the string */
-		ptstring[k] = '\n';
-		k++;
+	ptstring[k] = '\n';
+	k++;
 	}
 	ptstring[k] = '\0';
 
