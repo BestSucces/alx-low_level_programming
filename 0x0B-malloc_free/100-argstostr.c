@@ -19,17 +19,13 @@ char *argstostr(int ac, char **av)
 
 	/* get the length of each string */
 	for (i = 0, count = 0; i < ac; i++)
-	{
+
 	/* each row becomes av[i] */
 	for (j = 0; av[i][j] != '\0'; j++, count++)
-	{
-		count++;
 
-	}
-	} count++;
 	/* allocate enough space for all the string */
-	  
-	ptstring = malloc(count * sizeof(char) + 1);
+
+	ptstring = malloc(count * sizeof(char));
 	if (ptstring == NULL)
 		return (NULL);
 
